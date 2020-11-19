@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<!-- saved from url=(0074)file:///home/jana/CSH/presentations/nursing_home_COVID_talk/index.html#/11 -->
+<html class="reveal-full-page"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><script src="./nursing_home_covid_files/markdown.js"></script>
+	<script>
+	  Reveal.initialize({
+	    plugins: [ RevealMarkdown ]
+	  });
+	</script>
+
+	
+		
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="./nursing_home_covid_files/reset.css">
+		<link rel="stylesheet" href="./nursing_home_covid_files/reveal.css">
+		<link rel="stylesheet" href="./nursing_home_covid_files/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="./nursing_home_covid_files/monokai.css" id="highlight-theme">
+	<style type="text/css">.hljs-ln{border-collapse:collapse}.hljs-ln td{padding:0}.hljs-ln-n:before{content:attr(data-line-number)}</style></head>
+	<body class="reveal-viewport" style="--slide-width:960px; --slide-height:700px;">
+		<div class="reveal slide center focused has-vertical-slides has-horizontal-slides ready" role="application" data-transition-speed="default" data-background-transition="fade" style="">
+			<div class="slides" style="width: 960px; height: 700px; zoom: 1.276;">
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="past">
+					<p style="padding-bottom:50px">Agent-based simulations for optimized prevention of the spread of SARS-CoV-2 in nursing homes</p>
+					<p><small> Complexity Science Hub Vienna      |     Medical University Vienna</small>
+					</p><p><small> Jana Lasser     |     lasser@csh.ac.at     |     @janalasser</small></p>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="past">
+					<h3>motivation</h3>
+					<style>
+						.container{
+						    display: flex;
+						}
+						.col{
+						    flex: 1;
+						}
+						</style>
+
+						<div class="container">
+
+						<div class="col">
+							<ul>
+						  		<li>High mortality<br></li>
+						  		<li>Close living conditions in homes → easy spread<br></li>
+						  		<li>Balance between quality of life and safety</li>
+								</ul>
+						</div>
+
+						<div class="col">
+						<img src="./nursing_home_covid_files/mortality_over_age.png" width="350" height="300">
+						</div>
+
+						</div>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="past">
+					<h3>aim</h3>
+					<p class="fragment fade-in visible" data-fragment-index="0">Use agent based simulations</p>
+					<p class="fragment fade-in visible" data-fragment-index="1">in a model of an Austrian nursing home</p>
+					<p class="fragment fade-in visible" data-fragment-index="2">to find the best prevention strategy.</p>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true"><h3 id="agent-based-simulations">Agent based simulations</h3>
+<ul>
+<li>two types of agents: residents, employees</li>
+<li>agents have an <em>infection state</em></li>
+</ul>
+</section>
+				  	<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<div class="r-stack">
+							agent states
+						  <p class="fragment fade-in-then-out visible" data-fragment-index="0"> <img src="./nursing_home_covid_files/viral_load.svg" width="785" height="563"> </p>
+						  <p class="fragment fade-in-then-out visible" data-fragment-index="1"> <img src="./nursing_home_covid_files/infection_states_1.svg" width="785" height="563"> </p>
+						  <p class="fragment fade-in-then-out visible" data-fragment-index="2"> <img src="./nursing_home_covid_files/infection_states_2.svg" width="785" height="563"> </p>
+						  <p class="fragment fade-in-then-out visible" data-fragment-index="3"> <img src="./nursing_home_covid_files/infection_states_3.svg" width="785" height="563"> </p>
+						  <p class="fragment fade-in-then-out visible" data-fragment-index="4"> <img src="./nursing_home_covid_files/infection_states_4.svg" width="785" height="563"> </p>
+						  <p class="fragment visible" data-fragment-index="5"> <img src="./nursing_home_covid_files/infection_states_and_quarantine.svg" width="785" height="563"> </p>
+						</div>
+					</section>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section style="top: 350px; display: none;">
+						Collaboration with Caritas to model Austrian nursing homes
+					</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<div class="r-stack">
+								floor plan and interactions
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="0"> <img src="./nursing_home_covid_files/floor_plan_1.svg" width="827" height="563"> </p>
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="1"> <img src="./nursing_home_covid_files/floor_plan_2.svg" width="827" height="563"> </p>
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="2"> <img src="./nursing_home_covid_files/floor_plan_3.svg" width="827" height="563"> </p>
+							  <p class="fragment visible" data-fragment-index="3"> <img src="./nursing_home_covid_files/floor_plan_4.svg" width="827" height="563"> </p>
+							</div>
+					</section>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section style="top: 350px; display: none;">
+						contact network
+						<p> <img src="./nursing_home_covid_files/transmission_network.svg" width="1080" height="608"> </p>
+					</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						SEIR-dynamics
+						<p> <img src="./nursing_home_covid_files/no_testing.svg" width="1080" height="608"> </p>
+					</section>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true"><h3 id="interventions">Interventions</h3>
+<ul>
+<li>diagnostic testing → test symptomatic agents</li>
+<li>isolation → quarantine contacts after positive result </li>
+<li>preventive testing → test all agents in fixed intervals</li>
+</ul>
+</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<div class="r-stack">
+							test types
+							<p class="fragment fade-in-then-out visible" data-fragment-index="0"> <img src="./nursing_home_covid_files/test_types_PCR.svg" width="918" height="348"> </p>
+							<p class="fragment fade-in-then-out visible" data-fragment-index="1"> <img src="./nursing_home_covid_files/test_types_LAMP.svg" width="918" height="348"> </p>
+							<p class="fragment visible" data-fragment-index="2"> <img src="./nursing_home_covid_files/test_types_antigen.svg" width="918" height="348"> </p>
+						</div>
+					</section>
+
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true" class="future" aria-hidden="true"><h3 id="in-practice-accuracy">In practice: accuracy</h3>
+<ul>
+<li>PCR tests detect <span style="color:green">before</span> becoming infectious</li>
+<li>RT-LAMP tests detect infectious persons</li>
+<li>Antigen tests detect <span style="color:red">after</span> becoming infectious</li>
+</ul>
+</section>
+
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true" class="future" aria-hidden="true"><h3 id="in-practice-time-until-result">In practice: time until result</h3>
+<ul>
+<li>PCR tests tage <span style="color:red">1-2 days</span> to return results</li>
+<li>RT-LAMP tests take up to 1 day to return results</li>
+<li>Antigen tests detect <span style="color:green">only minutes</span> to return results
+<br><br>
+Important for <em> quarantine decisions!</em></li>
+</ul>
+</section>
+				</section>
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true"><h3 id="calibration-using-outbreak-data-from-nursing-homes">Calibration using outbreak data from nursing homes</h3>
+<p>Scenario:</p>
+<ul>
+<li>introduce index case through an employee</li>
+<li>only dagnostic testing</li>
+<li>PCR tests with 2-day turnover  </li>
+<li>quarantine of close contacts (roommates, table neighbours) after positive test result</li>
+</ul>
+</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<font size="+3">agents are quarantined, the outbreak dies off eventually, without infecting all residents</font>
+						<img src="./nursing_home_covid_files/diagnostic_testing.svg" width="1620" height="400"><br>
+						<font size="+3">→ adjust transmission risk and contact weights to reproduce outbreak data</font>
+						
+					</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<font size="+3">employees were index case in 8/8 recorded outbreaks</font>
+						<img src="./nursing_home_covid_files/outbreak_calibration.svg" width="1080" height="450"> <br>
+						<font size="+3">employee index case:    R<sub>0</sub>  =  2.61 ± 1.33</font> <br>
+						<font size="+3">resident index case:    R<sub>0</sub>  =  4.82 ± 2.01</font>
+					</section> 
+				</section>
+
+
+				<section style="top: 350px; display: none;" hidden="" aria-hidden="true" class="stack past">
+					<section data-markdown="" style="text-align: left; top: 350px; display: none;" data-markdown-parsed="true"><h3 id="different-prevention-strategies">Different prevention strategies</h3>
+<ul>
+<li>baseline: only diagnostic testing</li>
+<li>on top of that: preventive screening with<ul>
+<li>different test technology (accuracy)</li>
+<li>different result turnover time</li>
+</ul>
+</li>
+</ul>
+</section>
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<div class="r-stack">
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="0"> <img src="./nursing_home_covid_files/results_only_PCR_single_1.svg" width="708" height="663"> </p>
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="1"> <img src="./nursing_home_covid_files/results_only_PCR_single_2.svg" width="708" height="663"> </p>
+							  <p class="fragment fade-in-then-out visible" data-fragment-index="2"> <img src="./nursing_home_covid_files/results_only_PCR_single_3.svg" width="708" height="663"> </p>
+							  <p class="fragment visible" data-fragment-index="3"> <img src="./nursing_home_covid_files/results_only_PCR_single_4.svg" width="708" height="663"> <br><font size="+3">tests per person per day</font></p>
+						</div>
+					</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<h4> Different test technologies</h4>
+						<div class="r-stack">
+							<p class="fragment fade-in-then-out visible" data-fragment-index="0"> <img src="./nursing_home_covid_files/test_type_results_1.svg" width="850" height="680"></p>
+							<p class="fragment currently-visible visible" data-fragment-index="1"> <img src="./nursing_home_covid_files/test_type_results_2.svg" width="850" height="680"></p>
+						</div>
+					</section>
+
+					<section class="future" aria-hidden="true" style="top: 350px; display: none;">
+						<h3> Different turnover times</h3>
+						<img src="./nursing_home_covid_files/turnover_time_results.svg" width="850" height="680">
+					</section>
+				</section>
+
+				<section style="top: 103.5px; display: block;" hidden="" aria-hidden="true" class="past">
+					<h3>technical notes</h3>
+					<style>
+						.container{
+						    display: flex;
+						}
+						.col{
+						    flex: 1;
+						}
+						</style>
+
+						<div class="container">
+
+						<div class="col">
+							<ul>
+								<li><font size="+3.5">existing stable library</font></li>
+						  		<li><font size="+3.5">easy to extend</font><br></li>
+						  		<li><font size="+3.5">out-of-the-box functionality</font>  
+						  			<pre><code data-trim="" data-noescape="" class="hljs css"><span class="hljs-selector-tag">self</span><span class="hljs-selector-class">.datacollector</span><span class="hljs-selector-class">.collect</span>()</code></pre>
+
+  									<pre><code data-trim="" data-noescape="" class="hljs css"><span class="hljs-selector-tag">self</span><span class="hljs-selector-class">.schedule</span><span class="hljs-selector-class">.step</span>()</code></pre>
+								</li>
+								</ul>
+						</div>
+
+						<div class="col">
+						<font size="+2"><a href="https://mesa.readthedocs.io/en/stable/">Mesa: Agent-based modeling in Python</a></font><br>
+						<img src="./nursing_home_covid_files/mesa_logo.png" width="350" height="300">
+						</div>
+
+						</div>
+				</section>
+
+				<section data-markdown="" style="text-align: left; top: 91.5px; display: block;" data-markdown-parsed="true" hidden="" aria-hidden="true" class="past"><h3 id="outlook">Outlook</h3>
+<ul>
+<li>Caritas is implementing an optimized prevention strategy in their homes</li>
+<li>To date: 18 asymptomatic positive employees identified with preventive testing<ul>
+<li>7 in the last week</li>
+</ul>
+</li>
+<li>Maximum of 1 follow-up case per index case</li>
+<li>Follow-up study comparing Caritas and other nursing homes</li>
+</ul>
+</section>
+
+				<section data-markdown="" style="text-align: left; top: 0px; display: block;" data-markdown-parsed="true" class="present"><h3 id="summary">Summary</h3>
+<ul>
+<li>Agent based simulations, micro-calibrated to nursing home situation</li>
+<li>Optimal prevention strategy:<ul>
+<li>test employees every 3 days</li>
+<li>use PCR or RT-LAMP tests with a maximum of 1 day result turnover</li>
+</ul>
+</li>
+<li>Result: maximum of one follow-up infection per index case<br><br></li>
+</ul>
+<p>see also:<br><a href="https://github.com/JanaLasser/agent_based_COVID_SEIRX">simulation on GitHub</a>   |   <a href="https://doi.org/10.17605/OSF.IO/HYD4R">preprint</a></p>
+</section>
+
+			</div>
+		<div class="backgrounds"><div class="slide-background past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background past" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background stack past" style="display: none;"><div class="slide-background-content"></div><div class="slide-background present" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div><div class="slide-background future" style="display: none;"><div class="slide-background-content"></div></div></div><div class="slide-background past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background past" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div><div class="slide-background present" data-loaded="true" style="display: block;"><div class="slide-background-content"></div></div></div><div class="slide-number" style="display: none;"></div><aside class="controls" data-controls-layout="bottom-right" data-controls-back-arrows="faded" style="display: block;"><button class="navigate-left enabled" aria-label="previous slide"><div class="controls-arrow"></div></button>
+			<button class="navigate-right" aria-label="next slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-up" aria-label="above slide" disabled="disabled"><div class="controls-arrow"></div></button>
+			<button class="navigate-down" aria-label="below slide" disabled="disabled"><div class="controls-arrow"></div></button></aside><div class="progress" style="display: block;"><span style="transform: scaleX(1);"></span></div><div class="speaker-notes" data-prevent-swipe="" tabindex="0"></div><div class="pause-overlay"><button class="resume-button">Resume presentation</button></div><div class="aria-status" aria-live="polite" aria-atomic="true" style="position: absolute; height: 1px; width: 1px; overflow: hidden; clip: rect(1px, 1px, 1px, 1px);">Summary Agent based simulations, micro-calibrated to nursing home situation Optimal prevention strategy: test employees every 3 days use PCR or RT-LAMP tests with a maximum of 1 day result turnover Result: maximum of one follow-up infection per index case see also: simulation on GitHub | preprint </div></div>
+
+		<script src="./nursing_home_covid_files/reveal.js"></script>
+		<script src="./nursing_home_covid_files/notes.js"></script>
+		<script src="./nursing_home_covid_files/markdown.js"></script>
+		<script src="./nursing_home_covid_files/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	
+
+</body></html>
